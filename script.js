@@ -115,3 +115,16 @@ initGame(); // Setup the game
 document.addEventListener('DOMContentLoaded', () => {
     initGame(); // Setup the game with a fetched word
 });
+
+function activateGuessOnEnter() {
+    guessInput.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            // Prevent the default action to avoid submitting a form if the input is part of one
+            event.preventDefault();
+            // Trigger the guess button click
+            guessButton.click();
+        }
+    });
+}
+
+activateGuessOnEnter();
