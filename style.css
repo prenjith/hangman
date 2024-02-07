@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#game-container {
+  background-color: #fffacd;
+  /* Pale yellow */
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 24px;
+  color: #ff5733;
+  /* Red-Orange */
+}
+
+#word-display {
+  font-size: 32px;
+  color: #333;
+  /* Dark gray */
+ margin-bottom: 10px; 
+  
+}
+
+#attempts {
+  margin-top: 20px;
+}
+
+#attempt-count {
+  font-weight: bold;
+  color: #28a745;
+  /* Green */
+}
+
+#guess-input {
+  margin-top: 20px;
+}
+
+#guess {
+  padding: 5px;
+  border: 2px solid #007bff;
+  /* Blue */
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+#guess-button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  /* Blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#result {
+  margin-top: 20px;
+}
+
+#result p {
+  font-weight: bold;
+  color: #ff5733;
+  /* Red-Orange */
+}
+
+#hangman-container {
+  margin-top: 20px;
+}
+
+#hangmanSvg {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+}
