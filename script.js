@@ -70,7 +70,7 @@ guessButton.addEventListener('click', () => {
   } else {
     attemptsLeft--;
     drawSvgPart(10 - attemptsLeft - 1); // Adjusted for ten lives
-    attemptCount.textContent = `Attempts left: ${attemptsLeft}`;
+    attemptCount.textContent = ` ${attemptsLeft}`;
     if (attemptsLeft <= 0) {
       result.textContent = `Game over! The word was "${targetWord}".`;
       guessInput.disabled = true;
@@ -88,7 +88,7 @@ async function initGame() {
   hangmanSvg.innerHTML = ''; // Clear previous SVG drawings
   initSvg(); // Initialize SVG settings
   wordDisplay.textContent = guessedWord.join(' ');
-  attemptCount.textContent = `Attempts left: ${attemptsLeft}`;
+  attemptCount.textContent = ` ${attemptsLeft}`;
   guessInput.disabled = false;
   guessButton.disabled = false;
   result.textContent = '';
