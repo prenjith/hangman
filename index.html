@@ -1,37 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangman Game</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <div id="game-container">
-    <h1> Hangman</h1>
-    <svg id="hangmanSvg" width="200" height="200" style="border: 1px solid #000;"></svg>
-    <div id="word-display">
+  <div class="container mt-5" id="game-container">
+    <h1 class="text-center mb-4">Hangman</h1>
+    <div class="row justify-content-center mb-3">
+      <svg id="hangmanSvg" width="200" height="200" class="border"></svg>
+    </div>
+    <div class="row justify-content-center mb-3" id="word-display">
       <!-- The word to guess will appear here -->
     </div>
-    <div id="attempts">
+    <div class="row justify-content-center mb-3" id="attempts">
       <p>Attempts left: <span id="attempt-count">10</span></p>
     </div>
-    <div id="guess-input">
-      <input type="text" id="guess" placeholder="Enter a letter">
-      <button id="guess-button">Guess</button>
+    <div class="row justify-content-center mb-3" id="guess-input">
+      <input type="text" id="guess" class="form-control mx-2" placeholder="Enter a letter" style="width: auto;">
+      <button id="guess-button" class="btn btn-primary">Guess</button>
     </div>
-    <div id="result">
+    <div class="row justify-content-center" id="result">
       <!-- The result of each guess will appear here -->
     </div>
   </div>
 
+  <!-- Optional JavaScript; choose one of the two! -->
 
-  <div id="hangman-container">
-    <div id="hangman-display">
 
-    </div>
-
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.55.2/phaser.min.js"></script>
   <script src="script.js"></script>
 </body>
 

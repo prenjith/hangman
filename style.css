@@ -1,90 +1,46 @@
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
 }
 
 #game-container {
-  background-color: #fffacd;
-  /* Pale yellow */
-  padding: 20px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    background-color: #fffacd; /* Pale yellow */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 h1 {
-  font-size: 24px;
-  color: #ff5733;
-  /* Red-Orange */
+    font-size: 24px;
+    color: #ff5733; /* Red-Orange */
 }
 
-#word-display {
-  font-size: 32px;
-  color: #333;
-  /* Dark gray */
- margin-bottom: 10px; 
-  
-}
-
-#attempts {
-  margin-top: 20px;
+#word-display,
+#attempts,
+#guess-input,
+#result {
+    color: #333; /* Dark gray for general text, overridden as needed */
 }
 
 #attempt-count {
-  font-weight: bold;
-  color: #28a745;
-  /* Green */
-}
-
-#guess-input {
-  margin-top: 20px;
+    font-weight: bold;
+    color: #28a745; /* Green */
 }
 
 #guess {
-  padding: 5px;
-  border: 2px solid #007bff;
-  /* Blue */
-  border-radius: 5px;
-  font-size: 16px;
-  outline: none;
+    border-color: #007bff; /* Bootstrap primary blue for consistency */
 }
 
 #guess-button {
-  padding: 5px 10px;
-  background-color: #007bff;
-  /* Blue */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-#result {
-  margin-top: 20px;
+    background-color: #007bff; /* Blue */
+    color: white;
 }
 
 #result p {
-  font-weight: bold;
-  color: #ff5733;
-  /* Red-Orange */
+    color: #ff5733; /* Red-Orange */
 }
 
-#hangman-container {
-  margin-top: 20px;
-}
-
-#hangmanSvg {
-  width: 200px;
-  height: 200px;
-  border: 1px solid #000;
+/* You might not need this if you're not using image elements for hangman graphics in this version */
+#hangman-images img {
+    max-width: 100px;
+    margin: 0 5px;
 }
